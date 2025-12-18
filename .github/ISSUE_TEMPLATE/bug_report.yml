@@ -1,0 +1,56 @@
+name:  Bug Report
+description: Report a defect or unexpected behavior
+title: "[BUG]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: Concise description of the issue
+      placeholder: What is the problem?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Observe error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      placeholder: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      placeholder: What actually happened?
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: OS / Browser / App Version
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots / Logs
+      placeholder: Attach screenshots or paste logs

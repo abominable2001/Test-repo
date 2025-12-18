@@ -1,0 +1,29 @@
+name:  Task
+description: Engineering or operational task
+title: "[TASK]: "
+labels: ["task"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      placeholder: What needs to be done?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] Criteria 1
+        - [ ] Criteria 2
+    validations:
+      required: true
+
+  - type: input
+    id: estimate
+    attributes:
+      label: Estimated Effort
+      placeholder: e.g., 4 hours / 2 story points
